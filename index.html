@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portfolio de Safae El Medyouny, étudiante en cycle préparatoire en Génie Industriel.">
+  <meta name="theme-color" content="#080b14">
+  <title>Safae El Medyouny | Portfolio</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+
+<body>
+  <div class="scroll-progress" id="scrollProgress"></div>
+
+  <header class="header">
+    <nav class="navbar container" aria-label="Navigation principale">
+      <a href="#home" class="logo">S<span>.</span>EM</a>
+
+      <button class="menu-toggle" id="menuToggle"
+        aria-label="Ouvrir le menu" aria-expanded="false"
+        aria-controls="navLinks">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+
+      <ul class="nav-links" id="navLinks">
+        <li><a class="nav-link active" href="#home">Accueil</a></li>
+        <li><a class="nav-link" href="#about">À propos</a></li>
+        <li><a class="nav-link" href="#skills">Compétences</a></li>
+        <li><a class="nav-link" href="#projects">Projets</a></li>
+        <li><a class="nav-link" href="#journey">Parcours</a></li>
+        <li><a class="nav-link" href="#contact">Contact</a></li>
+      </ul>
+
+      <a class="nav-cta" href="#contact">Collaborons <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+    </nav>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section class="hero section" id="home">
+      <div class="hero-grid"></div>
+      <div class="hero-glow glow-one"></div>
+      <div class="hero-glow glow-two"></div>
+
+      <div class="container hero-content">
+        <div class="hero-text">
+          <div class="availability reveal">
+            <span class="status-dot"></span>
+            Étudiante en ingénierie · Maroc
+          </div>
+
+          <p class="eyebrow reveal">BIENVENUE DANS MON UNIVERS</p>
+
+          <h1 class="hero-title reveal">
+            Safae <span class="gradient-text">El Medyouny.</span>
+          </h1>
+
+          <h2 class="hero-subtitle reveal">
+            Future ingénieure en <span id="typedText">Génie Industriel</span><span class="typing-cursor">|</span>
+          </h2>
+
+          <p class="hero-description reveal">
+            Étudiante en première année de cycle préparatoire,
+            passionnée par l'ingénierie, l'optimisation des systèmes
+            et les nouvelles technologies. J'apprends aujourd'hui
+            pour concevoir les solutions de demain.
+          </p>
+
+          <div class="hero-actions reveal">
+            <a href="#projects" class="btn btn-primary">
+              Découvrir mes projets <i class="fa-solid fa-arrow-right"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/safae-el-medyouny-556522250/"
+               target="_blank" rel="noopener noreferrer"
+               class="btn btn-outline">
+              <i class="fa-brands fa-linkedin"></i> Mon LinkedIn
+            </a>
+          </div>
+
+          <div class="hero-socials reveal">
+            <span>RETROUVEZ-MOI</span>
+            <a href="https://www.linkedin.com/in/safae-el-medyouny-556522250/"
+               target="_blank" rel="noopener noreferrer"
+               aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="mailto:safae.contact@example.com"
+               aria-label="Envoyer un email"><i class="fa-regular fa-envelope"></i></a>
+          </div>
+        </div>
+
+        <div class="hero-visual reveal">
+          <div class="orbit orbit-one"></div>
+          <div class="orbit orbit-two"></div>
+
+          <div class="profile-card">
+            <div class="profile-top">
+              <span class="window-dot"></span>
+              <span class="window-dot"></span>
+              <span class="window-dot"></span>
+              <span class="profile-label">PROFILE.EXE</span>
+            </div>
+
+            <div class="profile-avatar">
+              <i class="fa-solid fa-user-gear"></i>
+            </div>
+
+            <h3>Future Engineer</h3>
+            <p>Industrial Engineering &amp; Logistics</p>
+
+            <div class="profile-divider"></div>
+
+            <div class="profile-info">
+              <span><i class="fa-solid fa-graduation-cap"></i> Cycle préparatoire</span>
+              <span><i class="fa-solid fa-location-dot"></i> Maroc</span>
+              <span><i class="fa-solid fa-lightbulb"></i> Learning by doing</span>
+            </div>
+
+            <div class="profile-code">
+              <span>const</span> future = <span>"engineer"</span>;
+              <br>
+              <span>while</span> (learning) { growth++; }
+            </div>
+          </div>
+
+          <div class="floating-card float-top">
+            <i class="fa-solid fa-microchip"></i>
+            <div><strong>Innovation</strong><small>Think differently</small></div>
+          </div>
+
+          <div class="floating-card float-bottom">
+            <i class="fa-solid fa-gears"></i>
+            <div><strong>Engineering</strong><small>Build the future</small></div>
+          </div>
+        </div>
+      </div>
+
+      <a href="#about" class="scroll-indicator">
+        <span>Défiler pour explorer</span>
+        <i class="fa-solid fa-arrow-down"></i>
+      </a>
+    </section>
+
+    <!-- ABOUT -->
+    <section class="section section-padding" id="about">
+      <div class="container">
+        <div class="section-heading reveal">
+          <p class="eyebrow">01 — À PROPOS</p>
+          <h2>Apprendre, comprendre,<br><span class="gradient-text">construire.</span></h2>
+          <p>Un parcours guidé par la curiosité et l'envie de progresser.</p>
+        </div>
+
+        <div class="about-grid">
+          <div class="about-main glass-card reveal">
+            <div class="card-icon"><i class="fa-solid fa-compass"></i></div>
+            <h3>Qui suis-je ?</h3>
+            <p>
+              Je suis Safae, étudiante en première année de cycle préparatoire
+              en Génie Industriel. Je m'intéresse à l'organisation des systèmes,
+              à l'amélioration des processus et aux technologies qui rendent
+              le travail plus efficace.
+            </p>
+            <p>
+              À travers mes études et mes projets personnels, je souhaite
+              développer une solide base scientifique, des compétences
+              techniques et une approche méthodique de la résolution
+              de problèmes.
+            </p>
+            <a href="#contact" class="text-link">Échangeons ensemble <i class="fa-solid fa-arrow-right"></i></a>
+          </div>
+
+          <div class="about-side">
+            <article class="value-card glass-card reveal">
+              <div class="card-icon"><i class="fa-solid fa-bullseye"></i></div>
+              <h3>Mon objectif</h3>
+              <p>Développer mes compétences et évoluer vers l'ingénierie industrielle et la logistique.</p>
+            </article>
+
+            <article class="value-card glass-card reveal">
+              <div class="card-icon"><i class="fa-solid fa-brain"></i></div>
+              <h3>Mon état d'esprit</h3>
+              <p>Curiosité, rigueur, autonomie et volonté d'apprendre continuellement.</p>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section class="section section-padding section-alt" id="skills">
+      <div class="container">
+        <div class="section-heading reveal">
+          <p class="eyebrow">02 — COMPÉTENCES</p>
+          <h2>Un potentiel en <span class="gradient-text">construction.</span></h2>
+          <p>Les connaissances que je développe au fil de ma formation.</p>
+        </div>
+
+        <div class="skills-grid">
+          <article class="skill-card glass-card reveal">
+            <div class="skill-card-top">
+              <div class="card-icon"><i class="fa-solid fa-calculator"></i></div>
+              <span class="skill-number">01</span>
+            </div>
+            <h3>Sciences &amp; Mathématiques</h3>
+            <p>Des bases scientifiques pour analyser les problèmes et structurer le raisonnement.</p>
+            <div class="tag-list"><span>Mathématiques</span><span>Physique</span><span>Analyse</span></div>
+          </article>
+
+          <article class="skill-card glass-card reveal">
+            <div class="skill-card-top">
+              <div class="card-icon"><i class="fa-solid fa-code"></i></div>
+              <span class="skill-number">02</span>
+            </div>
+            <h3>Développement web</h3>
+            <p>Création de pages web et apprentissage des bases du développement front-end.</p>
+            <div class="tag-list"><span>HTML</span><span>CSS</span><span>JavaScript</span></div>
+          </article>
+
+          <article class="skill-card glass-card reveal">
+            <div class="skill-card-top">
+              <div class="card-icon"><i class="fa-solid fa-gears"></i></div>
+              <span class="skill-number">03</span>
+            </div>
+            <h3>Génie industriel</h3>
+            <p>Découverte des systèmes techniques, de l'organisation et de l'amélioration des processus.</p>
+            <div class="tag-list"><span>Organisation</span><span>Logistique</span><span>Optimisation</span></div>
+          </article>
+
+          <article class="skill-card glass-card reveal">
+            <div class="skill-card-top">
+              <div class="card-icon"><i class="fa-solid fa-people-group"></i></div>
+              <span class="skill-number">04</span>
+            </div>
+            <h3>Compétences humaines</h3>
+            <p>Des qualités essentielles pour apprendre, travailler en équipe et mener des projets.</p>
+            <div class="tag-list"><span>Curiosité</span><span>Rigueur</span><span>Esprit d'équipe</span></div>
+          </article>
+        </div>
+
+        <p class="skills-note reveal">
+          <i class="fa-solid fa-circle-info"></i>
+          Cette liste présente mes domaines d'apprentissage, et non une certification de maîtrise.
+        </p>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section class="section section-padding" id="projects">
+      <div class="container">
+        <div class="section-heading reveal">
+          <p class="eyebrow">03 — PROJETS</p>
+          <h2>Transformer les idées <span class="gradient-text">en réalisations.</span></h2>
+          <p>Mes projets évolueront au fur et à mesure de mon apprentissage.</p>
+        </div>
+
+        <div class="projects-grid">
+          <article class="project-card glass-card reveal">
+            <div class="project-visual visual-web">
+              <div class="mock-browser">
+                <div class="mock-dots"><i></i><i></i><i></i></div>
+                <div class="mock-content">
+                  <div class="mock-line long"></div>
+                  <div class="mock-line short"></div>
+                  <div class="mock-blocks"><span></span><span></span><span></span></div>
+                </div>
+              </div>
+              <span class="project-category">WEB DEVELOPMENT</span>
+            </div>
+            <div class="project-body">
+              <div class="project-meta"><span>Projet personnel</span><span>01</span></div>
+              <h3>Mon portfolio personnel</h3>
+              <p>Conception d'un site personnel pour présenter mon parcours, mes compétences et mes projets.</p>
+              <div class="tag-list"><span>HTML</span><span>CSS</span><span>JavaScript</span></div>
+              <span class="project-status"><span class="status-dot"></span> En développement</span>
+            </div>
+          </article>
+
+          <article class="project-card glass-card reveal">
+            <div class="project-visual visual-industry">
+              <div class="industry-icon"><i class="fa-solid fa-industry"></i></div>
+              <div class="industry-orbit orbit-a"></div>
+              <div class="industry-orbit orbit-b"></div>
+              <span class="project-category">INDUSTRIAL ENGINEERING</span>
+            </div>
+            <div class="project-body">
+              <div class="project-meta"><span>Projet académique</span><span>02</span></div>
+              <h3>Étude d'un système industriel</h3>
+              <p>Une piste de projet pour explorer les fonctions d'un système technique, ses contraintes et son fonctionnement.</p>
+              <div class="tag-list"><span>Analyse fonctionnelle</span><span>FAST</span><span>Conception</span></div>
+              <span class="project-status planned"><span class="status-dot"></span> À développer</span>
+            </div>
+          </article>
+
+          <article class="project-card glass-card reveal">
+            <div class="project-visual visual-logistics">
+              <div class="logistics-route">
+                <span><i class="fa-solid fa-box"></i></span>
+                <div class="route-line"></div>
+                <span><i class="fa-solid fa-warehouse"></i></span>
+                <div class="route-line"></div>
+                <span><i class="fa-solid fa-truck-fast"></i></span>
+              </div>
+              <span class="project-category">LOGISTICS</span>
+            </div>
+            <div class="project-body">
+              <div class="project-meta"><span>Projet d'apprentissage</span><span>03</span></div>
+              <h3>Découverte de la logistique</h3>
+              <p>Étude future d'un flux de produits, de la gestion des stocks et de l'organisation des opérations.</p>
+              <div class="tag-list"><span>Flux</span><span>Stocks</span><span>Organisation</span></div>
+              <span class="project-status planned"><span class="status-dot"></span> À développer</span>
+            </div>
+          </article>
+        </div>
+
+        <p class="projects-note">
+          Les projets 02 et 03 sont des pistes de travail, pas des réalisations déjà terminées.
+        </p>
+      </div>
+    </section>
+
+    <!-- JOURNEY -->
+    <section class="section section-padding section-alt" id="journey">
+      <div class="container">
+        <div class="section-heading reveal">
+          <p class="eyebrow">04 — PARCOURS</p>
+          <h2>Chaque étape compte <span class="gradient-text">.</span></h2>
+          <p>Mon parcours académique et les prochaines étapes que je souhaite franchir.</p>
+        </div>
+
+        <div class="timeline">
+          <article class="timeline-item reveal">
+            <div class="timeline-marker"><i class="fa-solid fa-graduation-cap"></i></div>
+            <div class="timeline-card glass-card">
+              <span class="timeline-date">Formation actuelle</span>
+              <h3>Cycle préparatoire en Génie Industriel</h3>
+              <p>Développement des bases scientifiques et découverte progressive des méthodes de l'ingénierie.</p>
+              <span class="timeline-label">En cours</span>
+            </div>
+          </article>
+
+          <article class="timeline-item reveal">
+            <div class="timeline-marker"><i class="fa-solid fa-laptop-code"></i></div>
+            <div class="timeline-card glass-card">
+              <span class="timeline-date">Apprentissage personnel</span>
+              <h3>Développement de mon portfolio</h3>
+              <p>Pratique du HTML, du CSS et du JavaScript à travers la création de mon site personnel.</p>
+              <span class="timeline-label">En cours</span>
+            </div>
+          </article>
+
+          <article class="timeline-item reveal">
+            <div class="timeline-marker"><i class="fa-solid fa-rocket"></i></div>
+            <div class="timeline-card glass-card">
+              <span class="timeline-date">Prochaine étape</span>
+              <h3>Développer des projets concrets</h3>
+              <p>Approfondir mes connaissances, travailler sur des projets techniques et enrichir mon portfolio.</p>
+              <span class="timeline-label future-label">Objectif</span>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="section section-padding" id="contact">
+      <div class="container">
+        <div class="contact-card glass-card reveal">
+          <div class="contact-glow"></div>
+
+          <div class="contact-content">
+            <p class="eyebrow">05 — CONTACT</p>
+            <h2>Construisons quelque chose<br><span class="gradient-text">d'intéressant.</span></h2>
+            <p>
+              Une idée, un projet étudiant ou une opportunité d'apprentissage ?
+              Je serais ravie d'échanger avec vous.
+            </p>
+
+            <div class="contact-links">
+              <a href="https://www.linkedin.com/in/safae-el-medyouny-556522250/"
+                 target="_blank" rel="noopener noreferrer" class="contact-link">
+                <i class="fa-brands fa-linkedin-in"></i>
+                <span><small>Retrouvez-moi sur</small><strong>LinkedIn</strong></span>
+                <i class="fa-solid fa-arrow-up-right-from-square external-icon"></i>
+              </a>
+
+              <a href="mailto:safae.contact@example.com" class="contact-link">
+                <i class="fa-regular fa-envelope"></i>
+                <span><small>Écrivez-moi par</small><strong>Email</strong></span>
+                <i class="fa-solid fa-arrow-up-right-from-square external-icon"></i>
+              </a>
+            </div>
+          </div>
+
+          <div class="contact-decoration" aria-hidden="true">
+            <i class="fa-solid fa-paper-plane"></i>
+            <div class="decoration-ring ring-one"></div>
+            <div class="decoration-ring ring-two"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <a href="#home" class="logo">S<span>.</span>EM</a>
+      <p>Conçu avec passion par Safae El Medyouny.</p>
+      <a href="#home" class="back-top" aria-label="Retour en haut">
+        <i class="fa-solid fa-arrow-up"></i>
+      </a>
+      <p class="copyright">© <span id="currentYear"></span> · Tous droits réservés.</p>
+    </div>
+  </footer>
+</body>
+</html>
